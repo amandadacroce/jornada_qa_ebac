@@ -1,0 +1,489 @@
+{
+	"id": "57994a75-7d6d-41c8-bc9f-81b7d2d2714e",
+	"name": "Golden Movie Sudio",
+	"timestamp": "2024-07-06T20:37:56.909Z",
+	"collection_id": "28072925-45285ac9-8444-4677-b8f0-f0d8b2a98b0a",
+	"folder_id": 0,
+	"environment_id": "28072925-a167b199-1385-4f52-bef5-4beb373da16d",
+	"totalPass": 32,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-06T20:37:56.198Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "eef30512-24ec-436b-8a32-59397ba7bcb3",
+			"name": "Cadastro todos os campo com sucesso",
+			"url": "http://localhost:3000/cadastro/",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code deve ser 200": true,
+				"Deve validar a propriedade message": true,
+				"Deve validar a propriedade de retorno": true
+			},
+			"testPassFailCounts": {
+				"Status code deve ser 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade de retorno": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				18
+			],
+			"allTests": [
+				{
+					"Status code deve ser 200": true,
+					"Deve validar a propriedade message": true,
+					"Deve validar a propriedade de retorno": true
+				}
+			]
+		},
+		{
+			"id": "f1706aac-6644-433f-b550-e2611d9f2dac",
+			"name": "Cadastro apenas campos obrigatórios com sucesso",
+			"url": "http://localhost:3000/cadastro/",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code deve ser 200": true,
+				"Deve validar a propriedade message": true,
+				"Deve validar a propriedade de retorno": true
+			},
+			"testPassFailCounts": {
+				"Status code deve ser 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade de retorno": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Status code deve ser 200": true,
+					"Deve validar a propriedade message": true,
+					"Deve validar a propriedade de retorno": true
+				}
+			]
+		},
+		{
+			"id": "c77f9950-4b33-4610-85db-e1b2f00eb1e1",
+			"name": "Cadastro sem nome",
+			"url": "http://localhost:3000/cadastro/",
+			"time": 6,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code deve ser 400": true,
+				"Deve validar a propriedade message": true,
+				"Deve validar a propriedade de retorno": true
+			},
+			"testPassFailCounts": {
+				"Status code deve ser 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade de retorno": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code deve ser 400": true,
+					"Deve validar a propriedade message": true,
+					"Deve validar a propriedade de retorno": true
+				}
+			]
+		},
+		{
+			"id": "c2565e01-8927-42ed-a90a-e674a7a3da47",
+			"name": "Cadastro sem sobrenome",
+			"url": "http://localhost:3000/cadastro/",
+			"time": 6,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code deve ser 400": true,
+				"Deve validar a propriedade message": true,
+				"Deve validar a propriedade de retorno": true
+			},
+			"testPassFailCounts": {
+				"Status code deve ser 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade de retorno": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code deve ser 400": true,
+					"Deve validar a propriedade message": true,
+					"Deve validar a propriedade de retorno": true
+				}
+			]
+		},
+		{
+			"id": "607050e1-e047-4364-8c6a-40203e21f6ae",
+			"name": "Cadastro email inválido",
+			"url": "http://localhost:3000/cadastro/",
+			"time": 7,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code deve ser 400": true,
+				"Deve validar a propriedade message": true,
+				"Deve validar a propriedade de retorno": true
+			},
+			"testPassFailCounts": {
+				"Status code deve ser 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade de retorno": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code deve ser 400": true,
+					"Deve validar a propriedade message": true,
+					"Deve validar a propriedade de retorno": true
+				}
+			]
+		},
+		{
+			"id": "8ae26a82-3c76-45be-8c99-6c7074f30ff6",
+			"name": "Cadastro e-mail duplicado",
+			"url": "http://localhost:3000/cadastro/",
+			"time": 4,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code deve ser 400": true,
+				"Deve validar a propriedade message": true,
+				"Deve validar a propriedade de retorno": true
+			},
+			"testPassFailCounts": {
+				"Status code deve ser 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade de retorno": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code deve ser 400": true,
+					"Deve validar a propriedade message": true,
+					"Deve validar a propriedade de retorno": true
+				}
+			]
+		},
+		{
+			"id": "e8fe453e-458d-47a5-8ad2-84763eb148f0",
+			"name": "Cadastro telefone inválido",
+			"url": "http://localhost:3000/cadastro/",
+			"time": 10,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code deve ser 400": true,
+				"Deve validar a propriedade message": true,
+				"Deve validar a propriedade de retorno": true
+			},
+			"testPassFailCounts": {
+				"Status code deve ser 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade de retorno": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code deve ser 400": true,
+					"Deve validar a propriedade message": true,
+					"Deve validar a propriedade de retorno": true
+				}
+			]
+		},
+		{
+			"id": "0102ff2a-cf4b-4202-a172-e838876e6eed",
+			"name": "Cadastro senha fraca/inválida",
+			"url": "http://localhost:3000/cadastro/",
+			"time": 8,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code deve ser 400": true,
+				"Deve validar a propriedade message": true,
+				"Deve validar a propriedade de retorno": true
+			},
+			"testPassFailCounts": {
+				"Status code deve ser 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade de retorno": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code deve ser 400": true,
+					"Deve validar a propriedade message": true,
+					"Deve validar a propriedade de retorno": true
+				}
+			]
+		},
+		{
+			"id": "1039010c-5622-4a8d-a4e0-47d8bf6778ff",
+			"name": "Cadastro senha campo vazio",
+			"url": "http://localhost:3000/cadastro/",
+			"time": 10,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code deve ser 400": true,
+				"Deve validar a propriedade message": true,
+				"Deve validar a propriedade de retorno": true
+			},
+			"testPassFailCounts": {
+				"Status code deve ser 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade de retorno": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code deve ser 400": true,
+					"Deve validar a propriedade message": true,
+					"Deve validar a propriedade de retorno": true
+				}
+			]
+		},
+		{
+			"id": "a52b4f5c-76a2-45de-aa38-121f986df17b",
+			"name": "Buscar usuário por id válido",
+			"url": "http://localhost:3000/usuario/id/2",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code deve ser 200": true,
+				"Deve validar as propriedades id, nome, email": true
+			},
+			"testPassFailCounts": {
+				"Status code deve ser 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar as propriedades id, nome, email": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code deve ser 200": true,
+					"Deve validar as propriedades id, nome, email": true
+				}
+			]
+		},
+		{
+			"id": "d9b2f67a-9fb7-452d-bc0b-f4535d5091b2",
+			"name": "Buscar usuário por id inexistente",
+			"url": "http://localhost:3000/usuario/id/0",
+			"time": 3,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code deve ser 404": true,
+				"Deve validar a propriedade message": true,
+				"Deve validar a propriedade de retorno": true
+			},
+			"testPassFailCounts": {
+				"Status code deve ser 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade message": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deve validar a propriedade de retorno": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code deve ser 404": true,
+					"Deve validar a propriedade message": true,
+					"Deve validar a propriedade de retorno": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 92,
+	"collection": {
+		"requests": [
+			{
+				"id": "eef30512-24ec-436b-8a32-59397ba7bcb3",
+				"method": "POST"
+			},
+			{
+				"id": "f1706aac-6644-433f-b550-e2611d9f2dac",
+				"method": "POST"
+			},
+			{
+				"id": "c77f9950-4b33-4610-85db-e1b2f00eb1e1",
+				"method": "POST"
+			},
+			{
+				"id": "c2565e01-8927-42ed-a90a-e674a7a3da47",
+				"method": "POST"
+			},
+			{
+				"id": "607050e1-e047-4364-8c6a-40203e21f6ae",
+				"method": "POST"
+			},
+			{
+				"id": "8ae26a82-3c76-45be-8c99-6c7074f30ff6",
+				"method": "POST"
+			},
+			{
+				"id": "e8fe453e-458d-47a5-8ad2-84763eb148f0",
+				"method": "POST"
+			},
+			{
+				"id": "0102ff2a-cf4b-4202-a172-e838876e6eed",
+				"method": "POST"
+			},
+			{
+				"id": "1039010c-5622-4a8d-a4e0-47d8bf6778ff",
+				"method": "POST"
+			},
+			{
+				"id": "a52b4f5c-76a2-45de-aa38-121f986df17b",
+				"method": "GET"
+			},
+			{
+				"id": "d9b2f67a-9fb7-452d-bc0b-f4535d5091b2",
+				"method": "GET"
+			}
+		]
+	}
+}
