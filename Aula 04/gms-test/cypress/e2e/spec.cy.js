@@ -117,7 +117,7 @@ describe('US-015-Recomendações Diárias de Filmes', () => {
 
 
   describe('US-001 - Busca de Filmes', () => {
-    it.only('Deve buscar por Palavra-chave', () => {
+    it('Deve buscar por Palavra-chave', () => {
       cy.visit('http://127.0.0.1:8080/')
       cy.get('#search-input').type('Star Wars')
       cy.get('#search-button').click()
