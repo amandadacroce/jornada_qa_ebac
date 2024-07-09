@@ -35,9 +35,9 @@ describe('US-001: Funcionalidade: Busca de filmes', () => {
         cy.get('#results-section').should('contain', 'Filme não encontrado.')
     });
 
-        it.only('Deve limpar a busca', () => {
-            cy.get('#clear-button').click()
-        });
+    it('Deve limpar a busca', () => {
+        cy.get('#clear-button').click()
+    });
 
 });
 

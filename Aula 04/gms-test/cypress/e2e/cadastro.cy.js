@@ -56,42 +56,4 @@ describe('US-012-Funcionalidade: Cadastro de membros ', () => {
     cy.get('a').click()
   });
 
-
-});
-
-
-describe('US-015-Recomendações Diárias de Filmes', () => {
-  it('Deve fazer a exibição de recomendações diárias de filmes em alta', () => {
-    cy.visit('http://127.0.0.1:8080/')
-    cy.get('#recommendations')
-      .find('img')  // Seleciona todas as imagens dentro da div
-      .should(($imgs) => {
-        // Verifica se o número de imagens está entre 4 e 5
-        expect($imgs).to.have.length.within(4, 5)
-      });
-  });
-
-
-  describe('US-001 - Busca de Filmes', () => {
-    it('Deve buscar por Palavra-chave', () => {
-      cy.visit('http://127.0.0.1:8080/')
-      cy.get('#search-input').type('Star Wars')
-      cy.get('#search-button').click()
-    });
-
-    it('Deve buscar por palavra-chave e não encontrar', () => {
-      cy.visit('http://127.0.0.1:8080/')
-      cy.get('#search-input').type('Rei leão')
-      cy.get('#search-button').click()
-      cy.get('#results-section').should('contain', 'Filme não encontrado.')
-    });
-
-    it('Deve limpar a busca', () => {
-      cy.visit('http://127.0.0.1:8080/')
-      cy.get('#clear-button')
-    });
-
-  });
-
-
 });
