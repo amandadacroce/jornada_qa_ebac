@@ -55,8 +55,4 @@ describe('US-012-Funcionalidade: Cadastro de membros ', () => {
     cy.get('#signup-response').should('contain', 'Senha não pode estar vazia')
   });
 
-  it.only('Deve validar link de política de privacidade', () => {
-    cy.get('a').click();
-  });
-
 });
