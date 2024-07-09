@@ -5,6 +5,10 @@ describe('US-015-Recomendações Diárias de Filmes ', () => {
     beforeEach(() => {
       cy.visit('/')
     });
+    
+    afterEach(() =>{
+        cy.screenshot() 
+    });
 
     it('Deve fazer a exibição de recomendações diárias de filmes em alta', () => {
       cy.get('#recommendations')

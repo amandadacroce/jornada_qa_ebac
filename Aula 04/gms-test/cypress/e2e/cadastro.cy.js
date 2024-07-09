@@ -6,7 +6,11 @@ describe('US-012-Funcionalidade: Cadastro de membros ', () => {
     cy.visit('/')
   });
 
+  afterEach(() =>{
+    cy.screenshot() 
+  });
 
+  
   it('Deve fazer o cadastro de campos obrigatórios', () => {
     var email = `amanda${Date.now()}@teste.com`
     cy.preencherCadastro('amanda', 'croce', email, null, 'Teste123@')
@@ -52,8 +56,7 @@ describe('US-012-Funcionalidade: Cadastro de membros ', () => {
   });
 
   it.only('Deve validar link de política de privacidade', () => {
-    cy.visit('http://127.0.0.1:8080/')
-    cy.get('a').click()
+    cy.get('a').click();
   });
 
 });
