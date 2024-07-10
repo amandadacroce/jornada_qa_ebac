@@ -13,7 +13,7 @@ describe('US-012-Funcionalidade: Cadastro de membros ', () => {
   
   it('Deve fazer o cadastro de campos obrigatórios', () => {
     var email = `amanda${Date.now()}@teste.com`
-    cy.preencherCadastro('amanda', 'croce', email, null, 'Teste123@')
+    cy.preencherCadastro('amanda', 'croce', email, '1215421355', 'Teste123@')
     cy.get('#signup-response').should('contain', 'Cadastro realizado com sucesso!')
   });
 
@@ -51,7 +51,7 @@ describe('US-012-Funcionalidade: Cadastro de membros ', () => {
 
   it('Deve validar mensagem de erro com o campo senha vazia', () => {
     var email = `amanda${Date.now()}@teste.com`
-    cy.preencherCadastro('amanda', 'croce', email, '11554654315', null)
+    cy.preencherCadastro('amanda', 'croce', email, '11554654315', ' ')
     cy.get('#signup-response').should('contain', 'Senha não pode estar vazia')
   });
 
