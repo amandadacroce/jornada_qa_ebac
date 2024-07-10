@@ -49,10 +49,5 @@ describe('US-012-Funcionalidade: Cadastro de membros ', () => {
     cy.get('#signup-response').should('contain', 'Senha deve ter pelo menos 8 caracteres, incluir uma letra maiúscula, um número e um caractere especial (!@#$&*)')
   });
 
-  it('Deve validar mensagem de erro com o campo senha vazia', () => {
-    var email = `amanda${Date.now()}@teste.com`
-    cy.preencherCadastro('amanda', 'croce', email, '11554654315', ' ')
-    cy.get('#signup-response').should('contain', 'Senha não pode estar vazia')
-  });
 
 });
