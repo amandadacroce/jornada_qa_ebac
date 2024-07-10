@@ -1,6 +1,5 @@
 /// <reference types="cypress"/>
 
-const { afterEach } = require("mocha");
 
 describe('US-001: Funcionalidade: Busca de filmes', () => {
     beforeEach(() => {
